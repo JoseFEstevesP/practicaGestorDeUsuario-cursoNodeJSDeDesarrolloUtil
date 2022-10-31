@@ -1,0 +1,2 @@
+* con el paquete lint-staged es para que se ejecute eslin y prettier antes de hacer un commit en todo los archivos 
+* para evitar escribir el ./carpeta en este proyecto se usa el archivo jconfig.json para hacer q el vscode intelprete los alias y como rutas y para q node lo detecte en el package poner la propiedad de import y poner el alias y la ruta q va a valer ese alias
