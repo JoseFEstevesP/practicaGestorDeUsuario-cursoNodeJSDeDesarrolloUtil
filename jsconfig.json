@@ -1,11 +1,14 @@
-// este archivo sirve para que el editor vscode intelprete las rutas de los archivos como alias en el caso de importar se escribe el alias en lugar de toda la ruta
 {
   "exclude": ["node_modules"],
   "compilerOptions": {
     "module": "Node16",
     "baseUrl": "./",
     "paths": {
-      "#Lib/*": ["./src/lib/*"]
+      "#Config/*": ["./src/config/*"],
+      "#Controllers/*": ["./src/controllers/*"],
+      "#Dto/*": ["./src/dto/*"],
+      "#Routes/*": ["./src/routes/*"],
+      "#Schemas/*": ["./src/schemas/*"]
     }
   }
 }
