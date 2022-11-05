@@ -2,7 +2,8 @@ import UserModel from '#Schemas/user.schema.js';
 const userProfileController = async (req, res) => {
   const { id } = req;
   const exitingUserById = await UserModel.findById(id).exec();
-  if (!exitingUserById) return res.status(401).send('credentials incorrect');
+  if (!exitingUserById)
+    return res.status(401).send({ errors: ['credentials incorrect'] });
   const { _id, name, surname, email } = exitingUserById;
   return res.send({ _id, name, surname, email });
 };
